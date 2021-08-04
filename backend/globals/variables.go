@@ -1,10 +1,10 @@
 package globals
 
 const (
-	MYSQL_DATABASE_USERNAME = "root"
-	MYSQL_DATABASE_PASSWORD = ""
+	MYSQL_DATABASE_USERNAME = "ICoffee_Dev"
+	MYSQL_DATABASE_PASSWORD = "adygcy8b"
 	MYSQL_DATABASE_NAME     = "ICoffee"
-	MYSQL_IP_ADDRESS        = "localhost"
+	MYSQL_IP_ADDRESS        = "mysql"
 	MYSQL_PORT              = "3306"
 )
 
