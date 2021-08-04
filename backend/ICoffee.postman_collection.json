@@ -1,0 +1,593 @@
+{
+	"info": {
+		"_postman_id": "a900500b-22a3-40ad-abf7-2ef306d668a0",
+		"name": "ICoffee",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "super-admin[select all roles]",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:9006/super-admin/roles",
+					"host": [
+						"localhost"
+					],
+					"port": "9006",
+					"path": [
+						"super-admin",
+						"roles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "super-admin[select role by role name]",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9006/super-admin/role/employer",
+					"host": [
+						"localhost"
+					],
+					"port": "9006",
+					"path": [
+						"super-admin",
+						"role",
+						"employer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insert role super admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"role\":\"employer\",\n    \"status\":\"1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9006/super-admin/role/register",
+					"host": [
+						"localhost"
+					],
+					"port": "9006",
+					"path": [
+						"super-admin",
+						"role",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "super-admin[select admin by id]",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9006/super-admin/27",
+					"host": [
+						"localhost"
+					],
+					"port": "9006",
+					"path": [
+						"super-admin",
+						"27"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete admin super admin",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:9006/super-admin/delete/26",
+					"host": [
+						"localhost"
+					],
+					"port": "9006",
+					"path": [
+						"super-admin",
+						"delete",
+						"26"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insert admin&super-admin super admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstname\": \"alireza\",\n    \"lastname\" : \"saffar\",\n    \"username\" : \"quintin\",\n    \"password\" : \"adygcy8b\",\n    \"email\" : \"a.khorasany@gmail.com\",\n    \"role_name\" : \"admin\",\n    \"birth_date\" : \"1370/08/23\",\n    \"mobile\" : \"09352399329\",\n    \"phone\" : \"05138474541\",\n    \"address\" : \"test address\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9006/super-admin/register",
+					"host": [
+						"localhost"
+					],
+					"port": "9006",
+					"path": [
+						"super-admin",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "super-admin[select all admins]",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9006/super-admin/admins",
+					"host": [
+						"localhost"
+					],
+					"port": "9006",
+					"path": [
+						"super-admin",
+						"admins"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login super admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\" : \"kansai\",\n    \"password\" : \"adygcy8b\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9006/super-admin/login",
+					"host": [
+						"localhost"
+					],
+					"port": "9006",
+					"path": [
+						"super-admin",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insert super-admin super admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstname\": \"alireza\",\n    \"lastname\" : \"saffar\",\n    \"username\" : \"kansai\",\n    \"password\" : \"adygcy8b\",\n    \"email\" : \"a.khorasany@gmail.com\",\n    \"role_name\" : \"super-admin\",\n    \"birth_date\" : \"1370/08/23\",\n    \"mobile\" : \"09352399329\",\n    \"phone\" : \"05138474541\",\n    \"address\" : \"test address\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9006/super-admin/register",
+					"host": [
+						"localhost"
+					],
+					"port": "9006",
+					"path": [
+						"super-admin",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "super-admin[insert category]",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"type\":\"test\",\n    \"cat_name\":\"test name\",\n    \"parent\":\"\",\n    \"status\":0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9006/super-admin/category/register",
+					"host": [
+						"localhost"
+					],
+					"port": "9006",
+					"path": [
+						"super-admin",
+						"category",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "super-admin[select category by id]",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9006/super-admin/category/id/4",
+					"host": [
+						"localhost"
+					],
+					"port": "9006",
+					"path": [
+						"super-admin",
+						"category",
+						"id",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "super-admin[select category by category name]",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"cat_name\":\"coffee shop\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9006/super-admin/category/name",
+					"host": [
+						"localhost"
+					],
+					"port": "9006",
+					"path": [
+						"super-admin",
+						"category",
+						"name"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "super-admin[delete category by id]",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:9006/super-admin/category/delete/6",
+					"host": [
+						"localhost"
+					],
+					"port": "9006",
+					"path": [
+						"super-admin",
+						"category",
+						"delete",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "super-admin[insert shop]",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"owner_id\":\"27\",\n    \"shop_name\":\"کافه بونامی\",\n    \"cat_name\":\"coffee shop\",\n    \"status\":0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9006/super-admin/shop/register",
+					"host": [
+						"localhost"
+					],
+					"port": "9006",
+					"path": [
+						"super-admin",
+						"shop",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "super-admin[select shop by owner id]",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9006/super-admin/shop/owner/27",
+					"host": [
+						"localhost"
+					],
+					"port": "9006",
+					"path": [
+						"super-admin",
+						"shop",
+						"owner",
+						"27"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "super-admin[select shop by shop id]",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9006/super-admin/shop/6",
+					"host": [
+						"localhost"
+					],
+					"port": "9006",
+					"path": [
+						"super-admin",
+						"shop",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "super-admin[select all shops]",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9006/super-admin/shops/select",
+					"host": [
+						"localhost"
+					],
+					"port": "9006",
+					"path": [
+						"super-admin",
+						"shops",
+						"select"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "super-admin[delete shop by shop id]",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:9006/super-admin/shop/delete/6",
+					"host": [
+						"localhost"
+					],
+					"port": "9006",
+					"path": [
+						"super-admin",
+						"shop",
+						"delete",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "super-admin[update shop]",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"shop_id\": \"7\",\n    \"shop_name\": \"کافه وال\",\n    \"owner_id\": \"27\",\n    \"cat_id\": \"4\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9006/super-admin/shop/update",
+					"host": [
+						"localhost"
+					],
+					"port": "9006",
+					"path": [
+						"super-admin",
+						"shop",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "super-admin[insert product]",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"product_name\":\"test product\",\n    \"shop_id\":\"7\",\n    \"avatar\":\"https://example.test/image-url.jpg\",\n    \"status\":\"0\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9006/super-admin/product/register",
+					"host": [
+						"localhost"
+					],
+					"port": "9006",
+					"path": [
+						"super-admin",
+						"product",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "super-admin[upload image product]",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "product-image",
+							"type": "file",
+							"src": "/home/alireza/Pictures/Screenshot from 2021-07-05 19-02-15.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:9006/super-admin/product/upload/avatar",
+					"host": [
+						"localhost"
+					],
+					"port": "9006",
+					"path": [
+						"super-admin",
+						"product",
+						"upload",
+						"avatar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "super-admin[select product by product id]",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9006/super-admin/product/4",
+					"host": [
+						"localhost"
+					],
+					"port": "9006",
+					"path": [
+						"super-admin",
+						"product",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "super-admin[select all products by owner id]",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9006/super-admin/product/owner/27",
+					"host": [
+						"localhost"
+					],
+					"port": "9006",
+					"path": [
+						"super-admin",
+						"product",
+						"owner",
+						"27"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "super-admin[delete product by product id]",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:9006/super-admin/product/delete/4",
+					"host": [
+						"localhost"
+					],
+					"port": "9006",
+					"path": [
+						"super-admin",
+						"product",
+						"delete",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
